@@ -308,6 +308,7 @@ html{
     margin-top: 10px;
     display: inline-block;
     border: none;
+    text-align: center;
 }
 
 .btn:hover{
@@ -368,6 +369,7 @@ html{
     min-height: 200px;
     position: relative;
     max-width: calc(100% - 32px);
+    animation: modalShow ease 0.5s;
 }
 .modal .modal-header{
     background: #0c8b32;
@@ -457,12 +459,19 @@ html{
 .contact-user{
     display: inline-;
 }
-.contact-form .form-control{
+.form-control{
     padding: 10px;
     border: 1px solid #ccc;
     width: 100%;
 }
 
-
+@keyframes modalShow {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
 
  

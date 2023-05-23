@@ -1,3 +1,10 @@
+/* tablet */
+@media (max-width: 1024px) and (min-width: 741px){
+    .s-full-width{
+        width: 100% !important;
+    }
+}
+
 /* Mobile */
 @media (max-width: 740px) {
     #nav {
@@ -36,8 +43,16 @@
         width: 60%;
         margin-bottom: 20px;
     }
-    
+    .s-full-width,
     .s-col-full{
-        width: 100%;
+        width: 100% !important;
+    }
+
+    .contact-form {
+        margin-top: 16px !important;
+    }
+    
+    .s-mt-8{
+        margin-top: 8px !important;
     }
 }
