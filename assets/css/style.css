@@ -2,10 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
+
 }
 
+html{
+    font-family: Arial, Helvetica, sans-serif;   
+    scroll-behavior: inherit;
+}
 
 #header{
     height: 46px;
@@ -126,18 +129,38 @@
     font-size: 12px;
     color: #fff;
 }
+
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-button{
     float: right;
     padding : 0 21px;
 }
-#header .search-icon {
-    color: #fff;
-    font-size: 20px;
-    line-height: 46px;
-}
+
 #header .search-button:hover{
     background-color: #ed0707;
     cursor: pointer;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+#header .search-icon,
+#header .menu-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
 }
 
 
@@ -170,11 +193,14 @@
 }
 
 #content .content-section{
+    max-width: 100%;
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
     height: auto;
+    padding-right: 16px;
+    padding-left: 16px;
 }
 
 #content .section-sub-heading {
@@ -199,7 +225,7 @@
 }
 
 #content .member-list {
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 
@@ -248,8 +274,7 @@
 
 /* place */
 .place-list{
-    margin-top: 32px ;
-    padding-bottom: 48px;
+    margin-top: 16px;
 }
 
 .place-img{
